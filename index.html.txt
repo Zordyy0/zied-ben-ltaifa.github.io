@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Zied Ben Ltaifa – Pre-Engineering Portfolio</title>
+  <style>
+    :root {
+      --accent: #00a86b;
+      --bg: #f7f9fb;
+      --text: #222;
+      --muted: #556;
+    }
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+      font-family: "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    }
+    body {
+      background: var(--bg);
+      color: var(--text);
+      line-height: 1.6;
+      scroll-behavior: smooth;
+    }
+    a { color: var(--accent); text-decoration: none; }
+    header {
+      background: var(--accent);
+      color: #fff;
+      padding: 3rem 1.5rem;
+      text-align: center;
+    }
+    header h1 { font-size: 2.2rem; letter-spacing: 1px; }
+    header p { margin-top: 0.5rem; font-size: 1.1rem; opacity: .9; }
+    nav {
+      background: #fff;
+      padding: 1rem;
+      box-shadow: 0 2px 4px rgba(0,0,0,.06);
+      position: sticky;
+      top: 0;
+      z-index: 100;
+    }
+    nav ul {
+      list-style: none;
+      display: flex;
+      justify-content: center;
+      gap: 2rem;
+      flex-wrap: wrap;
+    }
+    nav a {
+      font-weight: 600;
+      color: var(--text);
+      transition: color .2s;
+    }
+    nav a:hover { color: var(--accent); }
+    .container {
+      max-width: 900px;
+      margin: auto;
+      padding: 2rem 1.5rem;
+    }
+    section { margin-bottom: 3rem; }
+    h2 {
+      color: var(--accent);
+      margin-bottom: 1rem;
+      font-size: 1.5rem;
+      border-bottom: 2px solid var(--accent);
+      display: inline-block;
+    }
+    .hero-bio {
+      background: #fff;
+      padding: 2rem;
+      border-radius: 8px;
+      box-shadow: 0 2px 6px rgba(0,0,0,.06);
+      margin-bottom: 2rem;
+    }
+    .project {
+      background: #fff;
+      margin-bottom: 2rem;
+      padding: 1.5rem;
+      border-radius: 8px;
+      box-shadow: 0 2px 6px rgba(0,0,0,.06);
+    }
+    .project h3 { color: var(--accent); margin-bottom: .5rem; }
+    .project .media-slot {
+      background: #eef;
+      border: 2px dashed var(--accent);
+      padding: 2rem;
+      text-align: center;
+      margin: 1rem 0;
+      border-radius: 4px;
+    }
+    .reflection {
+      background: #f0fdfa;
+      border-left: 4px solid var(--accent);
+      padding: 1rem;
+      margin-top: 1rem;
+      font-style: italic;
+    }
+    .skills-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 1.5rem;
+    }
+    .skill-card {
+      background: #fff;
+      padding: 1.2rem;
+      border-radius: 8px;
+      box-shadow: 0 2px 6px rgba(0,0,0,.06);
+    }
+    .skill-card h3 { margin-bottom: .5rem; }
+    ul { padding-left: 1.2rem; }
+    .btn {
+      display: inline-block;
+      background: var(--accent);
+      color: #fff;
+      padding: .6rem 1.4rem;
+      border-radius: 4px;
+      font-weight: 600;
+      margin-top: 1rem;
+    }
+    footer {
+      text-align: center;
+      padding: 2rem 1rem;
+      color: var(--muted);
+    }
+    @media (max-width: 600px) {
+      header h1 { font-size: 1.8rem; }
+      nav ul { gap: 1rem; }
+    }
+  </style>
+</head>
+<body>
+
+<nav>
+  <ul>
+    <li><a href="#about">About</a></li>
+    <li><a href="#projects">Projects</a></li>
+    <li><a href="#skills">Skills</a></li>
+    <li><a href="#contact">Contact</a></li>
+  </ul>
+</nav>
+
+<header>
+  <h1>Zied Ben Ltaifa</h1>
+  <p>Pre-Engineering Student &nbsp;·&nbsp; Renewable Energy & Sustainable Innovation</p>
+  <p>Tunis, Tunisia &nbsp;|&nbsp; <a href="mailto:zied.benltaifa@medtech.tn">zied.benltaifa@medtech.tn</a> &nbsp;|&nbsp; <a href="https://linkedin.com/in/zied-ben-ltaifa" target="_blank">LinkedIn</a></p>
+</header>
+
+<div class="container">
+
+  <!-- About / Digital Handshake -->
+  <section id="about">
+    <h2>Digital Handshake</h2>
+    <div class="hero-bio">
+      <p>
+        <strong>Who I am:</strong> A second-year pre-engineering student at MedTech University, passionate about hardware, software, and clean energy.
+      </p>
+      <p style="margin-top: 1rem;">
+        <strong>What I'm studying:</strong> Embedded systems, renewable energy integration, and sustainable tech design—through coursework, Coursera certifications, and hands-on projects.
+      </p>
+      <p style="margin-top: 1rem;">
+        <strong>Where I want to go:</strong> I aim to build micro-grid solutions and smart energy systems that reduce carbon footprints at the community level, starting right here in Tunisia.
+      </p>
+    </div>
+  </section>
+
+  <!-- Video Introduction -->
+  <section>
+    <h2>Video Introduction</h2>
+    <div class="media-slot">
+      <p>📹 <strong>Embed your 2-min intro video here</strong></p>
+      <p style="font-size: 0.9rem; color: var(--muted);">Upload to YouTube → copy Embed code → paste here</p>
+    </div>
+  </section>
+
+  <!-- Projects -->
+  <section id="projects">
+    <h2>Featured Projects</h2>
+
+    <!-- Project 1 -->
+    <div class="project">
+      <h3>1. Smart Mirror System</h3>
+      <p><strong>Goal:</strong> Create an interactive mirror that displays real-time weather, news, Temperature, and fun messages for or daily life all while listening to musik and light control with a couple of hand claps.</p>
+      <p><strong>Technologies:</strong> Arduino</p>
+      <p><strong>My Contribution:</strong></p>
+      <ul>
+        <li>Coded sensor integration logic in ArduinoIDE to capture data from different sensors</li>
+        <li>Linked all parts to work together and optimized the energy used by all the system</li>
+      </ul>
+      <div class="media-slot">
+        <img src="images/mirror.jpg" alt="Smart Mirror" width="250">
+	<img src="images/code.jpg" alt="Code Snippet" width="250">
+      </div>
+      <div class="reflection">
+        <strong>Reflection:</strong> This project taught me that sustainability only works if it’s effortless for users. My first prototype had too much data on screen—feedback from classmates made me strip it down to three key metrics. I also learned troubleshooting the hard way: a loose ground wire and a defective speaker cost us five days. Now I double-check footprints before ordering.
+      </div>
+    </div>
+
+    <!-- Project 2 -->
+    <div class="project">
+      <h3>2. STAFIM Peugeot Internship </h3>
+      <p><strong>Goal:</strong> Learning how experienced engineers work together in teams under pressure.</p>
+      <p><strong>Technologies:</strong>Excel</p>
+      <p><strong>My Contribution:</strong></p>
+      <ul>
+        <li>Shadowed engineers logging battery health metrics; created a standardized Excel template that reduced reporting time by 20%</li>
+        <li>Followed the order of entering so to be vehicles for every post</li>
+        <li>Documented daily service tasks</li>
+      </ul>
+      <div class="media-slot">
+        <img src="images/workshop.jpg" alt="Workshop Photo" width="250">
+	<img src="images/mechanical.jpg" alt="Mechanical workshop" width="250">
+      </div>
+      <div class="reflection">
+        <strong>Reflection:</strong> I went in thinking EVs were all about batteries, but the magic is in the software-harmony. Watching a technician reflash an ECU in real-time showed me how critical firmware is to efficiency. My biggest growth? Translating mechanic jargon into clear notes that engineers actually read.
+      </div>
+    </div>
+
+    <!-- Project 3 -->
+    <div class="project">
+      <h3>3. IEEE PES Student Branch – Recruitment Drive</h3>
+      <p><strong>Goal:</strong> Grow membership in MedTech’s Power & Energy Society through targeted outreach.</p>
+      <p><strong>Technologies:</strong> Canva</p>
+            <div class="reflection">
+        <strong>Reflection:</strong> Although I am still new to being on board, leadership here wasn’t about talking, it was about listening. I also learned that delegating is a skill: my first event I tried to do everything; now I assign clear owners per task.
+      </div>
+    </div>
+
+  </section>
+
+  <!-- Skills -->
+  <section id="skills">
+    <h2>Skills, Tools & Certifications</h2>
+    <div class="skills-grid">
+      <div class="skill-card">
+        <h3>Programming</h3>
+        <ul>
+          <li>C (intermediate)</li>
+          <li>Java (intermediate)</li>
+          <li>Arduino (C-based)</li>
+          <li>Python (learning)</li>
+        </ul>
+      </div>
+      <div class="skill-card">
+        <h3>Engineering Tools</h3>
+        <ul>
+          <li>Arduino IDE</li>
+          <li>MicroC</li>
+          <li>Proteus</li>
+          <li>AutoCAD 2D/3D</li>
+          <li>Microsoft Excel</li>
+        </ul>
+      </div>
+      <div class="skill-card">
+        <h3>Certifications</h3>
+        <ul>
+          <li>3× Coursera: Programming in C & Java</li>
+        </ul>
+      </div>
+      <div class="skill-card">
+        <h3>Languages</h3>
+        <ul>
+          <li>Arabic (native)</li>
+          <li>English (fluent)</li>
+          <li>French (fluent)</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact -->
+  <section id="contact">
+    <h2>Let's Connect</h2>
+    <p>I'm always open to discussing renewable energy projects, embedded systems, or collaboration opportunities.</p>
+    <a class="btn" href="CV_ZIED_BEN_LTAIFA.pdf" download>Download CV (PDF)</a>
+  </section>
+
+</div>
+
+<footer>
+  <p>&copy; 2025 Zied Ben Ltaifa &nbsp;·&nbsp; Built with HTML & CSS</p>
+</footer>
+
+</body>
+</html>
